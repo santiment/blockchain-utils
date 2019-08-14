@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/santiment/blockchain-utils"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Santiment",
+  "license": "MIT",
   "devDependencies": {
     "mocha": "^6.2.0"
   },
