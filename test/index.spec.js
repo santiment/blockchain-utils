@@ -1,6 +1,6 @@
 const assert = require("assert")
 
-const { filterErrors } = require('../lib/eth')
+const { filterErrors } = require('../eth')
 const testErrTxs = require('./test_err_txs.json')
 const testParentErr = require('./test_parent_err.json')
 

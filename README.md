@@ -19,3 +19,11 @@ $ npm update https://github.com/santiment/blockchain-utils
 ```
 
 This will update the version to the latest SHA available.
+
+## Usage
+
+After the package is installed it can be used like this:
+
+```js
+import { filterErrors } = require('blockchain-utils/eth')
+```
