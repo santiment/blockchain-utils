@@ -30,7 +30,20 @@ function setErrors(traces) {
 
 }
 
+/** Remove traces which contain no useful data. For example:
+ {
+     "error": {
+         "code": -32000,
+         "message": "first run for txIndex 323 error: insufficient funds for gas * price + value: address 0xb64a30399f7F6b0C154c2E7Af0a3ec7B0A5b131a have 79011297267895730 want 79314366712002216"
+     }
+ }
+*/
+function filterNonActions(traces) {
+  return traces.filter(trace => typeof trace.action != 'undefined')
+}
+
 function filterErrors(traces) {
+  traces = filterNonActions(traces)
   traces = setErrors(traces)
   traces = traces.filter(trace => typeof trace.error === 'undefined')
   return traces
