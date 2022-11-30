@@ -1,3 +1,6 @@
+# This repo has been deprecated and code copied into
+https://github.com/santiment/san-chain-exporter
+
 # Blockchain Utils
 
 This package provides some utility functions when decoding blockchain data.
